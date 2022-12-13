@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/bars_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="fei.stu.mobv.fragments.authentication.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_fragment_to_registration_fragment"
+            app:destination="@id/registration_fragment" />
+        <action
+            android:id="@+id/action_login_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration_fragment"
+        android:name="fei.stu.mobv.fragments.authentication.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registration_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_registration_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locate_fragment"
+        android:name="fei.stu.mobv.fragments.LocateFragment"
+        android:label="LocateFragment">
+        <action
+            android:id="@+id/action_locate_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_locate_fragment_to_bars_fragment"
+            app:destination="@id/bars_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="fei.stu.mobv.fragments.home.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_bars_fragment"
+            app:destination="@id/bars_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_friends_fragment"
+            app:destination="@id/friends_fragment" />
+        <action
+            android:id="@+id/action_home_fragment_to_friends_location_fragment"
+            app:destination="@id/friends_location_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="fei.stu.mobv.fragments.bars.BarDetailFragment"
+        android:label="BarDetailFragment">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detail_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bars_fragment"
+        android:name="fei.stu.mobv.fragments.bars.BarsFragment"
+        android:label="BarsFragment">
+        <action
+            android:id="@+id/action_bars_fragment_to_locate_fragment"
+            app:destination="@id/locate_fragment" />
+        <action
+            android:id="@+id/action_bars_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_bars_fragment_self"
+            app:destination="@id/bars_fragment" />
+        <action
+            android:id="@+id/action_bars_fragment_to_home_fragment"
+            app:destination="@id/home_fragment" />
+        <action
+            android:id="@+id/action_bars_fragment_to_detail_fragment"
+            app:destination="@id/detail_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friends_fragment"
+        android:name="fei.stu.mobv.fragments.friends.FriendsFragment"
+        android:label="FriendsFragment">
+        <action
+            android:id="@+id/action_friends_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_friends_fragment_to_locate_fragment"
+            app:destination="@id/locate_fragment" />
+        <action
+            android:id="@+id/action_friends_fragment_to_detail_fragment"
+            app:destination="@id/detail_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/friends_location_fragment"
+        android:name="fei.stu.mobv.fragments.friends.FriendsLocationFragment"
+        android:label="FriendsLocationFragment">
+        <action
+            android:id="@+id/action_friends_location_fragment_to_locate_fragment"
+            app:destination="@id/locate_fragment" />
+        <action
+            android:id="@+id/action_friends_location_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+        <action
+            android:id="@+id/action_friends_location_fragment_to_detail_fragment"
+            app:destination="@id/detail_fragment" />
+    </fragment>
+
+</navigation>

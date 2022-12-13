@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="fei.stu.mobv.fragments.bars.BarsFragment">
+    <item
+        android:id="@+id/sorting"
+        android:title="@string/sorting"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item
+                android:id="@+id/sorting_descending_people"
+                android:orderInCategory="100"
+                android:title="@string/sorting_descending_people" />
+            <item
+                android:id="@+id/sorting_ascending_people"
+                android:title="@string/sorting_ascending_people"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sorting_descending_name"
+                android:title="@string/sorting_descending_name"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sorting_ascending_name"
+                android:orderInCategory="100"
+                android:title="@string/sorting_ascending_name" />
+            <item
+                android:id="@+id/sorting_descending_distance"
+                android:title="@string/sorting_descending_distance"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/sorting_ascending_distance"
+                android:title="@string/sorting_ascending_distance"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+</menu>

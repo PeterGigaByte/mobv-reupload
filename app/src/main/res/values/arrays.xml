@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selected_item">Vybrané zoradenie:</string>
+    <string-array name="sorting_options">
+        <item>Počet ľudí v podniku zostupne</item>
+        <item>Počet ľudí v podniku vzostupne</item>
+        <item>Názov zostupne</item>
+        <item>Názov vzostupne</item>
+        <item>Vzdialenosť zostupne</item>
+        <item>Vzdialenosť vzostupne</item>
+    </string-array>
+</resources>

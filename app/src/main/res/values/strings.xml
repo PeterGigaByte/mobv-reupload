@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Mobilné výpočty semestrálne zadania</string>
+    <string name="login_title">Prihlásenie</string>
+    <string name="registration_title">Registrácia</string>
+    <string name="home_title">Domov</string>
+
+    <string name="username_subject_hint">Meno používateľa</string>
+    <string name="password_subject_hint">Heslo</string>
+    <string name="login_button_text">Prihlásiť</string>
+    <string name="register_button_text">Registrovať</string>
+    <string name="register_hint">Ak sa chcete zaregistrovať, kliknite na tlačidlo registrovať!</string>
+    <string name="login_hint">Pre pokračovanie sa prosím prihláste!</string>
+
+    <string name="registration_hint2">Tu sa môžete zaregistrovať!</string>
+    <string name="password_subject_hint2">Znovu zadajte heslo</string>
+    <string name="login_hint2">Ak ste už zaregistrovaný, prihláste sa!</string>
+    <string name="back">Späť!</string>
+    <string name="show_on_map">Zobraziť na mape</string>
+    <string name="bars">Zoznam podnikov</string>
+
+    <string name="action_bars">Zoznam podnikov</string>
+    <string name="friends_list">Zoznam priatelov</string>
+    <string name="friends_location_list">Poloha priatelov</string>
+    <string name="action_friends">Pridat priatela</string>
+    <string name="delete_friend">Odobrať priateľa</string>
+
+    <string name="check_in">Prihlásiť</string>
+    <string name="im_here">Som tu!</string>
+
+
+    <string name="logout">Odhlásiť sa!</string>
+
+    <string name="sorting">Zoradenie</string>
+    <string name="sorting_descending_people">Počet ľudí v podniku zostupne</string>
+    <string name="sorting_ascending_people">Počet ľudí v podniku vzostupne</string>
+    <string name="sorting_descending_name">Názov zostupne</string>
+    <string name="sorting_ascending_name">Názov vzostupne</string>
+    <string name="sorting_descending_distance">Vzdialenosť zostupne</string>
+    <string name="sorting_ascending_distance">Vzdialenosť vzostupne</string>
+</resources>
